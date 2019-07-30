@@ -1,0 +1,308 @@
+Var Data%;
+var Pts%;
+Var Chan%:=1;
+Var in%;
+Var i%:=1;
+VAR GO%:=0;
+Var Rate%:=10000;
+var imm%;
+var fmm%;
+var fName$;
+Var j%;
+var fmName$;
+var fsName$;
+var ffName$;
+var name$;
+var fPath$;
+var err%;
+var im%;
+var inm%;
+
+im%:=0; 'normally this is 0
+inm%:=1;
+imm%:= 0; 'normally this is 0
+fmm%:=1;
+
+
+Const Area%:=1;
+Const DAC%:=0;
+Const State%:=1;
+
+View(App(3)).WindowVisible(0);
+
+DoToolbar();   'Try it out
+Halt;
+
+Func DoToolbar()    'Set your own name...
+ToolbarClear();     'Remove any old buttons
+ToolbarSet(0, "", Idle%);                   ' Idle routine
+ToolbarSet(1, "Quit");    'This button returns its number
+ToolbarSet(2, "Sample", Output%);   'Link to function
+ToolbarSet(3, "Load File", LoadDataF%);
+ToolbarSet(4, "Export File", ExportDataF%);
+ToolbarSet(5, "File Path and Conversion", FilePaths%);
+ToolbarSet(6, "TakePath", TakePath%);
+
+
+If In% <= 0 then
+  ToolbarEnable(2, 0);  
+endif
+
+return Toolbar("Select...", 1023);
+end;
+
+
+
+Func TakePath%()
+name$:=FileName$(3);
+DlgCreate("Set name template for text output files");
+DlgString(1,"Set file name template",20);
+DlgShow(name$);
+
+FilePathSet("",0,"Choose a directory for saving text files");             'Locate where you wish to save the files (sets the current directory)
+fPath$ := FilePath$();   
+ 
+return 1;  'This leaves toolbar active
+end;
+ 
+ 
+
+Func FilePaths%()
+'name$:=FileName$(3);
+'DlgCreate("Set name template for text output files");
+'DlgString(1,"Set file name template",20);
+'DlgShow(name$);
+
+'FilePathSet("",0,"Choose a directory for saving text files");             'Locate where you wish to save the files (sets the current directory)
+'fPath$ := FilePath$();  
+
+
+name$:=FileName$(3);
+DlgCreate("Set name template for text output files");
+DlgString(1,"Set file name template",20);
+DlgShow(name$);
+
+FilePathSet("",0,"Choose a directory for saving text files");             'Locate where you wish to save the files (sets the current directory)
+fPath$ := FilePath$();   
+
+
+
+
+for inm% := 1 to 1000 do      
+
+    fName$:= Print$("%s%s%d.csv",fPath$,name$,inm%);
+    fsName$:= Print$("%s%s%d.cfs",fPath$,name$,inm%);
+    FileConvert$(fName$, fsName$, 1, err%,"dll=asciidll;conf=C:/Users/ncelik34/Documents/Tests/CED Test/Ascii_Last2.icfx");
+	'DlgVisible(0,0)
+	'DlgButton(1); 
+	'DlgShow();
+next;
+
+
+
+
+return 1;  'This leaves toolbar active
+end;
+
+
+
+
+
+Func Idle%()   'Button 0 routine
+If go%=1 then
+    If SampleStatus() =  3 then
+        if i% <= View(in%).Framecount() then
+            AddArea%();
+        else
+           Output%(); 
+        endif    
+    endif
+endif
+return 1;  'This leaves toolbar active
+end;
+
+
+
+
+Func Output%()   'Button 2 routine
+
+If Go%=0 then
+    ToolbarSet(2, "Sample STOP", Output%);   'Link to function
+
+    SampleTrigger(0);
+    Samplestart(0);
+	'waitforpagecomplete (
+	'ExportDataF%()
+	
+    Go%:=1;
+else
+    ToolbarSet(2, "Sample", Output%);   'Link to function    
+	ExportDataF%();
+    
+	view(In%);
+    FileClose(1);
+    view(Data%);
+	Samplestop();
+    FileClose(1);
+	
+	
+	'View(in%);
+    'FileClose(0);
+	'View(Data%);
+    'FileClose(0);
+	'FileClose(-1);
+	'ExportDataF%();
+    Go%:=0;
+	
+	if im% < 1000 then
+	   LoadDataF%();
+	endif
+      ToolbarEnable(2, 0);  
+endif   
+
+return 1;  'This leaves toolbar active
+end;
+
+
+
+
+Func LoadDataF%();
+Var Err%;
+Var j%;
+Var Length;
+
+Samplemode(0);
+Samplestates(1);
+'Err%:=SampleAuxStateRemove(4);
+
+im%:=im%+1;
+'Yield(0.25);
+'FileClose(1); 
+ffName$:= Print$("%s%s%d.cfs",fPath$,name$,im%);
+Yield(0.25);
+In%:=FileOpen(ffName$, 0, 3);
+If In% < 0 then
+	Message("File failed to open.");
+	DoToolbar();
+endif
+
+
+
+Window(0,0,50,100);
+Frame(i%);
+
+Err%:=Pulses(State%, -2); 'Returns the number of pulses for a given state (-1 = control track)
+if Err% > 1 then
+    
+    For j%:= Err% to 2 step -1 do
+Err%:=PulseDel(1, -2, j%-1); 'Delete the pulses on the control track
+    Next 
+Endif    
+        
+Pts%:=ChanPoints(Chan%);
+'PrintLog(Pts%);
+'PrintLog(Binsize(Chan%));
+Err%:=PulseAdd(1, DAC%, 6, "SChan", 0.0, Pts%*Binsize(Chan%));
+PulseWaveSet(1, Err%, 1, 1.0/Binsize(Chan%), Pts%); 
+
+
+Err%:=SampleSeqWave(Area%, DAC%, Pts%, 1.0/Binsize(chan%));
+
+SampleRate(Rate%);
+
+Length:=Pts%*Binsize(chan%);
+'PrintLog(Length);
+SamplePoints(Length*Rate%);
+
+
+'FileClose(In%);
+Data%:=FileNew(0);
+
+If Data% < 0 then
+    Message("%s. Halting.", Error$(Data%));
+    Halt
+endif
+
+View(Data%);
+Xrange(Mintime(), Maxtime());
+Window(50,0, 100,100);
+WindowVisible(1);
+
+i%:=1;
+AddArea%();
+SampleState(1);
+ToolbarEnable(2, 1);
+Output%();
+
+Return 1
+end
+
+
+
+Func ExportDataF%()   'Button 4 routine
+var datan%;
+
+
+var fcount%;
+var foName$;
+var name$;
+var datname$;
+var dat2name$;
+var staten%;
+var file%;
+var fPath$;
+
+'fmm%:=1;
+'text file starts
+dat2name$:="Data";
+datname$:= Print$("%s%d",dat2name$,fmm%);
+datan% := ViewFind(datname$);
+FrontView(datan%);
+fmm%:=fmm%+1;
+imm%:=imm%+1;
+ 
+ExportChanFormat(0,1,1,1);
+ExportChanFormat(1,0,0,0);
+ExportChanFormat(4,0,0,0);
+ExportChanFormat(5,0,0,0);
+ExportChanFormat(6, 0,0,0);
+ExportTextFormat(6,8,0,"\"",",",1,0);
+ExportChanList("1..3");                           'Set up export of data
+ExportFrameList("1");
+foName$:= Print$("%s%s%d.csv",fPath$,name$,imm%);
+ExportTimeRange(MinTime(),MaxTime());
+FileExportAs(foName$,1);
+
+	
+Return 1
+end
+
+
+
+Func AddArea%();
+Var arr[0];
+Var Err%;
+
+View(In%);
+Frame(i%);
+
+
+Resize arr[ChanPoints(Chan%)];
+
+ArrConst(Arr[], View(In%, Chan%).[]);
+
+Err%:=PulseWaveformSet(1, 1, 0, arr[]);
+'Err%:=SampleSeqWave(Area%, arr[], 0, 0); 'While sampling
+SamplePause(0);
+SamplePause(1);
+i%+=1;
+Return 1
+end
+
+
+
+
+
+
+
+
