@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from imblearn.over_sampling import SMOTE
 
-from sklearn.preprocessing import MinMaxScaler, label_binarize
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import roc_curve, auc, confusion_matrix
 from sklearn.utils import shuffle
 
@@ -113,12 +113,6 @@ def step_decay(epoch):
 
 batch_size = 256
 
-#folder = r"P:/Code/MLG channels-Lowery/CED Tests/260219/testtest"
-
-
-# os.chdir(folder)
-#CurrDir = os.getcwd()
-#files = os.listdir(folder)
 
 
 df = pd.read_csv('outfinaltest328.csv', header=None)
@@ -150,13 +144,6 @@ print(f'training set = {train_size}')
 print(f'test set = {test_size}')
 print(f'total length = {test_size + train_size}')
 
-in_train, in_test = dataset[0:train_size,
-                            1], dataset[train_size:train_size+test_size, 1]
-#target_train, target_test = categorical_labels[0:train_size,:], categorical_labels[train_size:train_size+test_size,:]
-in_train = in_train.reshape(len(in_train), 1, 1, 1)
-in_test = in_test.reshape(len(in_test), 1, 1, 1)
-# state=np.argmax(target_test,axis=-1)
-
 
 x_train = dataset[:, 1]
 y_train = categorical_labels[:]
@@ -184,11 +171,9 @@ print('training set= ', trainy_size)
 print('test set =', testy_size)
 print('total length', testy_size+trainy_size)
 
-#categorical_labels = to_categorical(Y_res, num_classes=maxchannels+1)
 
 in_train, in_test = xx_res[0:trainy_size,
                            0], xx_res[trainy_size:trainy_size+testy_size, 0]
-#target_train, target_test = categorical_labels[0:trainy_size,:], categorical_labels[trainy_size:trainy_size+testy_size,:]
 target_train, target_test = yy_res[0:trainy_size,
                                    :], yy_res[trainy_size:trainy_size+testy_size, :]
 in_train = in_train.reshape(len(in_train), 1, 1, 1)
@@ -196,13 +181,9 @@ in_test = in_test.reshape(len(in_test), 1, 1, 1)
 
 
 # validation set!!
-df31 = pd.read_csv('outfinaltest10.csv', header=None)
-#df29 = df29.iloc[1:]
-#df = df.astype('float64')
-data_val = df31.values
-data_val = data_val.astype('float64')
+df_val = pd.read_csv('outfinaltest10.csv', header=None)
+data_val = df_val.values.astype('float64')
 
-idataset2 = np.zeros([len(data_val), ], dtype=int)
 idataset2 = data_val[:, 2]
 idataset2 = idataset2.astype(int)
 #scaler2 = preprocessing.StandardScaler()
@@ -211,8 +192,6 @@ idataset2 = idataset2.astype(int)
 val_set = data_val[:, 1]
 val_set = val_set.reshape(len(val_set), 1, 1, 1)
 val_target = data_val[:, 2]
-
-# state=np.argmax(target_test,axis=-1)
 
 
 # model starts..
@@ -251,7 +230,6 @@ lrate = LearningRateScheduler(step_decay)
 epochers = 2
 history = newmodel.fit(x=in_train, y=target_train, initial_epoch=0, epochs=epochers, batch_size=batch_size, callbacks=[
                        lrate], verbose=1, shuffle=False, validation_data=(in_test, target_test))
-#predict = model.predict(in_test, batch_size=batch_size)
 
 
 # prediction for test set
@@ -261,7 +239,6 @@ predict = newmodel.predict(in_test, batch_size=batch_size)
 predict_val = newmodel.predict(val_set, batch_size=batch_size)
 
 
-# state=np.argmax(target_test,axis=-1)
 class_predict = np.argmax(predict, axis=-1)
 class_predict_val = np.argmax(predict_val, axis=-1)
 class_target = np.argmax(target_test, axis=-1)

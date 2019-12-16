@@ -3,6 +3,7 @@
 This repository contains code for the paper, [Deep-Channel: A Deep Convolution and Recurrent Neural Network for Detection of Single Molecule Events] (The web link), by Numan Celik, Fiona O'Brien, Yalin Zheng, Frans Conens, and Richard Barrett-Jolley.
 
 This code contains the implementation of a deep learning method to automatically identify transition events of raw time-series ion channel data files. This deep learning method for the analysis of patch-clamp electrophysiological data, relies on convolutional neural networks (CNN) and long short-term memory (LSTM) architecture. This network automatically idealises complex single molecule activity more accurately and faster than traditional threshold crossing or segmental K-means (SKM). 
+
 ## Dependencies
 * Python 3.5 and higher
 * Keras framework with Tensorflow backend
@@ -15,8 +16,13 @@ This code contains the implementation of a deep learning method to automatically
      The raw ion channel data files can be downloaded from this repository in the folder "training dataset"
     * Download via Kaggle:
      The raw ion channel data files (.csv) with idealized records can be downloaded from kaggle.com/
-     
-2. Run:
+
+2. Activate conda environment:
+
+    * Run `conda env create -f environment.yml && conda activate DeepChannel` to install dependencies and activate virtual environment. 
+
+
+3. Run:
    * Run the file *deepchannel_train.py* to train the Deep-channel model based on LSTM-convolution layers using the training set and evaluates the model on a different test set.
    
    * Once training procedure has been completed, run the file *predictor.py* to predict automatically given a different dataset. 
