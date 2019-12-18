@@ -115,22 +115,15 @@ batch_size = 256
 
 
 
-df = pd.read_csv('outfinaltest328.csv', header=None)
+df = pd.read_csv('outfinaltest161.csv', header=None)
 dataset = df.values.astype('float64')
 timep = dataset[:, 0]
 maxer = np.amax(dataset[:, 2])
 maxeri = maxer.astype('int')
 maxchannels = maxeri
-idataset = np.zeros([len(dataset), ], dtype=int)
-idataset = dataset[:, 2]
-idataset = idataset.astype(int)
-categorical_labels = to_categorical(idataset, num_classes=maxchannels+1)
-#scaler = MinMaxScaler(feature_range=(0, 1))
-#dataset = scaler.fit_transform(dataset)
-#scaler = preprocessing.StandardScaler()
-
-#dataset = scaler.fit_transform(dataset)
-
+idataset = dataset[:, 2].astype(int)
+scaler = MinMaxScaler(feature_range=(0, 1))
+dataset = scaler.fit_transform(dataset)
 
 # train and test set split and reshape:
 train_size = int(len(dataset) * 0.80)
@@ -146,17 +139,16 @@ print(f'total length = {test_size + train_size}')
 
 
 x_train = dataset[:, 1]
-y_train = categorical_labels[:]
+y_train = idataset[:]
 x_train = x_train.reshape((len(x_train), 1))
-y_train = y_train.reshape((len(y_train), maxchannels + 1))
+y_train = y_train.reshape((len(y_train), 1))
 
 
 sm = SMOTE(sampling_strategy='auto', random_state=42)
 X_res, Y_res = sm.fit_sample(x_train, y_train)
 
-
-# xx_res=np.random.shuffle(X_res)
-yy_res = Y_res.reshape((len(Y_res), maxchannels + 1))
+yy_res = Y_res.reshape((len(Y_res), 1))
+yy_res = to_categorical(yy_res, num_classes=maxchannels+1)
 xx_res, yy_res = shuffle(X_res, yy_res)
 
 
@@ -181,17 +173,17 @@ in_test = in_test.reshape(len(in_test), 1, 1, 1)
 
 
 # validation set!!
-df_val = pd.read_csv('outfinaltest10.csv', header=None)
+df_val = pd.read_csv('outfinaltest78.csv', header=None)
 data_val = df_val.values.astype('float64')
 
-idataset2 = data_val[:, 2]
-idataset2 = idataset2.astype(int)
-#scaler2 = preprocessing.StandardScaler()
-#data_val = scaler2.fit_transform(data_val)
+idataset2 = data_val[:, 2].astype(int)
 
 val_set = data_val[:, 1]
+scaler = MinMaxScaler(feature_range=(0, 1))
+val_set = scaler.fit_transform(val_set.reshape(-1,1))
 val_set = val_set.reshape(len(val_set), 1, 1, 1)
 val_target = data_val[:, 2]
+val_target = to_categorical(val_target, num_classes=maxchannels+1)
 
 
 # model starts..
@@ -242,7 +234,7 @@ predict_val = newmodel.predict(val_set, batch_size=batch_size)
 class_predict = np.argmax(predict, axis=-1)
 class_predict_val = np.argmax(predict_val, axis=-1)
 class_target = np.argmax(target_test, axis=-1)
-class_target_val = np.argmax(idataset2, axis=-1)
+class_target_val = np.argmax(val_target, axis=-1)
 
 
 cm_test = confusion_matrix(class_target, class_predict)
