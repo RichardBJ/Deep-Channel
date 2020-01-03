@@ -41,4 +41,4 @@ A sample of synthetic ion channel data created through Signal script:
 
 ## Citation / DOI
 Please cite this work through this DOI link:
-(Doi link)
+https://doi.org/10.1101/767418
