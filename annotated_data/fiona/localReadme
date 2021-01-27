@@ -1,4 +1,5 @@
 These are the files needed to create the even sequence that ends up being sent to the amplfier and then redigitised as described in the paper.
 *m matlab script
 *.xlsx the Markovian model.
+*.csv is an example output
 "Fiona" is simply the first name of the person who created the data originally
