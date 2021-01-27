@@ -1,0 +1,5 @@
+The files in here are outputs in the production of our training data.
+1) Matlab output the astrtxxxx.csv files.
+2) These files were then played into a real amplifier using the *sgs file as a CED Signal software script.
+3) CED Signal then recaptures/digitises these raw data as *.cfs files.
+4) which can be converted to xxx.csv files.
