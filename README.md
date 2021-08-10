@@ -1,5 +1,5 @@
 # Deep-Channel
-
+Sorry we are not really updating this site regularly, due to change of staff within the group.
 This repository contains code for the paper, [Deep-Channel: A Deep Convolution and Recurrent Neural Network for Detection of Single Molecule Events] (https://www.biorxiv.org/content/10.1101/767418v3 ), by Numan Celik, Fiona O'Brien, Yalin Zheng, Frans Conens, and Richard Barrett-Jolley.
 Accepted for Publication in Nature's Communications Biology Dec 2019 (https://www.nature.com/articles/s42003-019-0729-3)
 
