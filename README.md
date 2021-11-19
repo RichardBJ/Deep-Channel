@@ -35,6 +35,7 @@ This code contains the implementation of a deep learning method to automatically
 ## Synthetic data creation
 A large collections of synthetic one channel and/or multi-channel raw ion channel data files have been created through a Signal software script called *synthetic_data.sgs*. 
 These large collections of data files are used for training the Deep-channel model. 
+Small note; for simply installing all packages via pip one can use: pip install -r piprequirements.txt
 
 A sample of synthetic ion channel data created through Signal script:
 
