@@ -6,10 +6,9 @@ Created on Thu Apr  4 13:53:49 2019
 """
 from tensorflow.keras import backend as K
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 import os
-
+import sys
 
 # Importing the Keras libraries and packages
 import tensorflow as tf
@@ -23,7 +22,6 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import RobustScaler
 from sklearn.metrics import confusion_matrix, roc_auc_score, classification_report
 import math
-
 
 batch_size = 256
 
@@ -110,8 +108,9 @@ def auc(y_true, y_pred):
     K.get_session().run(tf.local_variables_initializer())
     return auc
 
-def main():
-	df30= pd.read_csv(f"Random datasets/1 channel/high noise/outfinaltest78.csv", header=None)
+def main(filename, mymodel):
+	print(filename)
+	df30= pd.read_csv(filename, header=None)
 	dataset = df30.values
 	dataset = dataset.astype('float64')
 	timep = dataset[:, 0]
@@ -131,38 +130,20 @@ def main():
 	target_train = idataset
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
-	loaded_model = load_model('model/nmn_oversampled_deepchanel2_5.h5', custom_objects={
+	loaded_model = load_model(mymodel, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 
-	loaded_model.summary()
-
-	p = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
-	c=np.argmax(p, axis=-1)
 	
-	"""lenny = 2000
-	ulenny = 5000"""
-	lenny=0
-	ulenny=5000
+
+	c = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
+	c=np.argmax(c, axis=-1)
+	print (f"dataset shape = {dataset.shape}")
+	print (f"c shape = {c.shape}")
+	output=np.concatenate((dataset[:,0:2],c.reshape(-1,1)),axis=1)
+	lenny = 2000
+	ulenny = 5000
 	
-	plt.figure(figsize=(30, 6))
-	plt.subplot(3, 1, 1)
-	plt.plot(dataset[lenny:ulenny, 1], color='blue', label="the raw data")
-	plt.title("The raw test")
-	plt.ylabel('current')
-
-	plt.subplot(3, 1, 2)
-	plt.plot(target_train[lenny:ulenny], color='black',
-			 label="ground truth")
-	plt.ylabel('state')
-
-	plt.subplot(3, 1, 3)
-	plt.plot(c[lenny:ulenny], color='red', label="confidence")
-
-	plt.xlabel('timepoint')
-	plt.ylabel('p')
-
-	plt.show()
-	return 0
+	return output
 
 if __name__ == "__main__":
-    c=main()
+	c=main(filename, mymodel)
