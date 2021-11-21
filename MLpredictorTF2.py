@@ -108,11 +108,8 @@ def auc(y_true, y_pred):
     K.get_session().run(tf.local_variables_initializer())
     return auc
 
-def main(filename, mymodel):
-	print(filename)
-	df30= pd.read_csv(filename, header=None)
-	dataset = df30.values
-	dataset = dataset.astype('float64')
+def main(dataset, mymodel):
+	dataset = np.asarray(dataset).astype('float64')
 	timep = dataset[:, 0]
 	"""
 	maxer = np.amax(dataset[:, 2])
@@ -149,4 +146,4 @@ def main(filename, mymodel):
 	return output
 
 if __name__ == "__main__":
-	c=main(filename, mymodel)
+	c=main(data, mymodel)
