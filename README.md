@@ -40,6 +40,16 @@ Small note; for simply installing all packages via pip one can use: pip install 
 A sample of synthetic ion channel data created through Signal script:
 
 ![One channel opening and closing events on synthetic ion channel data file](synthetic_data_creation/ion_channel4.png)
+## Matlab app
+The Matlab makes life a little easier for testing,
+but has a heavy dependency list.
+(1) Naked Python installed in a path accessible location
+(2) Python/scripts also in the path
+(3) Pip would usually be included in the above, butdo need to
+make sure that is running before running the 
+pip install -r piprequirements.txt.  Ideally all such things
+in environments, but could not get the app to run like that.
+
 
 ## Citation / DOI
 Please cite this work through this DOI link:

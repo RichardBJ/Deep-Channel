@@ -1,0 +1,5 @@
+dists
+dist
+build
+__pycache__
+*.exe

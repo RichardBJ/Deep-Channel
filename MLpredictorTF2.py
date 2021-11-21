@@ -133,13 +133,15 @@ def main(filename, mymodel):
 	loaded_model = load_model(mymodel, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 
-	
+	"""for debugging, save in a different form to see if this works better with ML"""
+	loaded_model.save('MLmodel/my_model')
 
 	c = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
 	c=np.argmax(c, axis=-1)
 	print (f"dataset shape = {dataset.shape}")
 	print (f"c shape = {c.shape}")
 	output=np.concatenate((dataset[:,0:2],c.reshape(-1,1)),axis=1)
+	output=scaler.inverse_transform(output)
 	lenny = 2000
 	ulenny = 5000
 	
