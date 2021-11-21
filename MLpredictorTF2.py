@@ -114,20 +114,21 @@ def main(filename, mymodel):
 	dataset = df30.values
 	dataset = dataset.astype('float64')
 	timep = dataset[:, 0]
+	"""
 	maxer = np.amax(dataset[:, 2])
 	print(maxer)
 	maxeri = maxer.astype('int')
 	maxchannels = maxeri
 	idataset = dataset[:, 2]
-	idataset = idataset.astype(int)
+	idataset = idataset.astype(int)"""
 
 	scaler = MinMaxScaler(feature_range=(0, 1))
-	dataset = scaler.fit_transform(dataset)
-
+	temp = scaler.fit_transform(dataset[:,1].reshape(-1,1))
+	dataset[:,1]=temp.reshape(-1,)
 	train_size = int(len(dataset))
 
-	in_train = dataset[:, 1]
-	target_train = idataset
+	in_train = dataset[:,1]
+	"""target_train = idataset"""
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
 	loaded_model = load_model(mymodel, custom_objects={
@@ -135,13 +136,13 @@ def main(filename, mymodel):
 
 	"""for debugging, save in a different form to see if this works better with ML"""
 	loaded_model.save('MLmodel/my_model')
-
+	temp=scaler.inverse_transform(dataset[:,1].reshape(-1,1))
+	dataset[:,1]=temp.reshape(-1,)
 	c = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
 	c=np.argmax(c, axis=-1)
 	print (f"dataset shape = {dataset.shape}")
 	print (f"c shape = {c.shape}")
 	output=np.concatenate((dataset[:,0:2],c.reshape(-1,1)),axis=1)
-	output=scaler.inverse_transform(output)
 	lenny = 2000
 	ulenny = 5000
 	

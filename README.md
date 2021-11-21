@@ -40,9 +40,12 @@ Small note; for simply installing all packages via pip one can use: pip install 
 A sample of synthetic ion channel data created through Signal script:
 
 ![One channel opening and closing events on synthetic ion channel data file](synthetic_data_creation/ion_channel4.png)
+
 ## Matlab app
-The Matlab makes life a little easier for testing,
+The Matlab makes life a little easier for testing, obviously version alpha 0.001
 but has a heavy dependency list.
+Currently allows one to read a time (column 0) including file with raw data (column 1).
+csv format.
 (1) Naked Python installed in a path accessible location
 (2) Python/scripts also in the path
 (3) Pip would usually be included in the above, butdo need to
