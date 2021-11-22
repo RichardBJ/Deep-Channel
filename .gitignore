@@ -1,0 +1,8 @@
+MLmodel
+dist
+build
+__pycache__
+*.index
+MLmodel/my_model/variables/variables.data-00000-of-00001
+MLmodel/my_model/saved_model.pb
+MLmodel/my_model/keras_metadata.pb
