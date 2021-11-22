@@ -41,6 +41,21 @@ A sample of synthetic ion channel data created through Signal script:
 
 ![One channel opening and closing events on synthetic ion channel data file](synthetic_data_creation/ion_channel4.png)
 
+## Matlab app
+The Matlab makes life a little easier for testing, obviously version alpha 0.001
+but has a heavy dependency list.
+Currently allows one to read a time (column 0) including file with raw data (column 1).
+csv format.
+(1) Naked Python installed in a path accessible location
+(2) Python/scripts also in the path
+(3) Pip would usually be included in the above, butdo need to
+make sure that is running before running the 
+pip install -r piprequirements.txt.  Ideally all such things
+in environments, but could not get the app to run like that.
+We created a Youtube video of the GUI in action here: https://youtu.be/7DMynRdN0cU
+**NOTE this is all development materials, made freely available as a starting point. It is not a finished product.
+
+
 ## Citation / DOI
 Please cite this work through this DOI link:
 https://doi.org/10.1101/767418
