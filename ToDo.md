@@ -1,7 +1,10 @@
 ##To do in priority order
-(1) The Malab app would be better to infer time etc and just send that to the python script.
-(2) Option to allow 1 or two signal reads.
-(2) Give option to save the processed data.
-(3) Option to do an idealisation or just view the data as is.
-(4) Niceties such as a dialogs, to tell you to load a model first etc.... 
-(4) More signals?
+
+(**) Give option to save the processed data.
+Should be pretty easy! But remember to optionally just save the IDL which will then be input or HJCFIT
+(**) Option to allow 1 or two signal reads
+...it sort of does, but really it should plot these BEFORE doing the idealisation and then replot after doing it?
+(**) Option to do an idealisation or just view the data as is.
+(**) Niceties such as a dialogs, to tell you to load a model first etc.... 
+(**) The app axis limit buttons dont always agree
+(**) More signals?

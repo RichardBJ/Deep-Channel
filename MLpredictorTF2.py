@@ -108,7 +108,37 @@ def auc(y_true, y_pred):
     K.get_session().run(tf.local_variables_initializer())
     return auc
 
-def main(dataset, mymodel):
+def binarize(probs):
+	print("binarizing the data to just two states")
+	maxstates=10
+	limit2=True
+	
+	states=list(np.argmax(probs,axis=1))
+	
+	freqs=[]
+	for i in range(maxstates):
+		freqs.append(states.count(i))
+	level0=np.argmax(freqs)
+	
+	freqs[level0]=0
+	level1=np.argmax(freqs)
+	
+	if level0>level1:
+		tmp=level0
+		level0=level1
+		level1=tmp
+	
+	binarized=[]
+	
+	for row in probs:
+		if np.argmax(row)<=level0:
+			binarized.append(0)                    
+		else:
+			binarized.append(1)
+	return binarized
+
+
+def main(dataset, mymodel, limit2):
 	dataset = np.asarray(dataset).astype('float64')
 	timep = dataset[:, 0]
 	"""
@@ -136,14 +166,16 @@ def main(dataset, mymodel):
 	temp=scaler.inverse_transform(dataset[:,1].reshape(-1,1))
 	dataset[:,1]=temp.reshape(-1,)
 	c = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
-	c=np.argmax(c, axis=-1)
+	if limit2==True:
+		c=np.asarray(binarize(c)).reshape(-1,1)
+	else:
+		c=np.argmax(c, axis=-1)
+		c=c.reshape(-1,1)
 	print (f"dataset shape = {dataset.shape}")
 	print (f"c shape = {c.shape}")
-	output=np.concatenate((dataset[:,0:2],c.reshape(-1,1)),axis=1)
-	lenny = 2000
-	ulenny = 5000
+	output=np.concatenate((dataset[:,0:2],c),axis=1)
 	
 	return output
 
 if __name__ == "__main__":
-	c=main(data, mymodel)
+	c=main(data, mymodel, limit2)

@@ -52,6 +52,8 @@ csv format.
 make sure that is running before running the 
 pip install -r piprequirements.txt.  Ideally all such things
 in environments, but could not get the app to run like that.
+We created a Youtube video of the GUI in action here: https://youtu.be/7DMynRdN0cU
+**NOTE this is all development materials, made freely available as a starting point. It is not a finished product.
 
 
 ## Citation / DOI

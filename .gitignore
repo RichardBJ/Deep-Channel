@@ -4,7 +4,7 @@ __pycache__
 *.exe
 MLmodel/my_model/variables
 MLmodel/my_model/assets
-MLmodel/my_model
+MLmodel/my_model/
 MLmodel
-
-
+MLmodel\my_model\
+model/OtherFormats/*
