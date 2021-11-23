@@ -127,7 +127,7 @@ def main():
 
 	train_size = int(len(dataset))
 
-	in_train = dataset[:, 0]
+	in_train = dataset[:, 1]
 	target_train = idataset
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
