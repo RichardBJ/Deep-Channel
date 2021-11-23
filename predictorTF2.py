@@ -111,7 +111,7 @@ def auc(y_true, y_pred):
     return auc
 
 def main():
-	df30= pd.read_csv(f"Random datasets/1 channel/high noise/outfinaltest78.csv", header=None)
+	df30= pd.read_csv(f"alldata/Random datasets/5 channels/outfinaltest534.csv", header=None)
 	dataset = df30.values
 	dataset = dataset.astype('float64')
 	timep = dataset[:, 0]
@@ -127,11 +127,11 @@ def main():
 
 	train_size = int(len(dataset))
 
-	in_train = dataset[:, 1]
+	in_train = dataset[:, 0]
 	target_train = idataset
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
-	loaded_model = load_model('model/nmn_oversampled_deepchanel2_5.h5', custom_objects={
+	loaded_model = load_model('manymodels/deep_chanel_5.h5', custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 
 	loaded_model.summary()
