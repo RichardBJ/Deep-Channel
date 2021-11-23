@@ -14,10 +14,11 @@ import glob
 # Importing the Keras libraries and packages
 import tensorflow as tf
 from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import LSTM
-from tensorflow.keras.layers import Dropout
+from tensorflow.keras.layers import Dense, TimeDistributed
+from tensorflow.keras.layers import LSTM,Conv1D,MaxPooling1D
+from tensorflow.keras.layers import Dropout, Flatten, BatchNormalization, Activation
 from tensorflow.keras.utils import to_categorical
+from tensorflow.keras import optimizers
 from sklearn import preprocessing
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import RobustScaler
@@ -25,7 +26,7 @@ from sklearn.metrics import confusion_matrix, roc_auc_score, classification_repo
 import math
 
 batch_size = 256
-
+maxchannels=5
 def mcor(y_true, y_pred):
     # matthews_correlation
     y_pred_pos = K.round(K.clip(y_pred, 0, 1))
@@ -109,9 +110,40 @@ def auc(y_true, y_pred):
     K.get_session().run(tf.local_variables_initializer())
     return auc
 
+def remake_model():
+	newmodel = Sequential()
+	timestep = 1
+	input_dim = 1
+	newmodel.add(TimeDistributed(Conv1D(filters=64, kernel_size=1,
+										activation='relu'), input_shape=(None, timestep, input_dim)))
+	newmodel.add(TimeDistributed(MaxPooling1D(pool_size=1)))
+	newmodel.add(TimeDistributed(Flatten()))
+
+	newmodel.add(LSTM(256, activation='relu', return_sequences=True))
+	newmodel.add(BatchNormalization())
+	newmodel.add(Dropout(0.2))
+
+	newmodel.add(LSTM(256, activation='relu', return_sequences=True))
+	newmodel.add(BatchNormalization())
+	newmodel.add(Dropout(0.2))
+
+	newmodel.add(LSTM(256, activation='relu'))
+	newmodel.add(BatchNormalization())
+	newmodel.add(Dropout(0.2))
+
+	newmodel.add(Dense(maxchannels+1))
+	newmodel.add(Activation('softmax'))
+
+
+	newmodel.compile(loss='categorical_crossentropy', optimizer=optimizers.SGD(lr=0.001, momentum=0.9, nesterov=False), metrics=[
+					 'accuracy'])
+	return newmodel
+
 def runner(model=None, datafile=None):
+	model="deep_chanel_5.h5"
+	created_model=remake_model()
+	created_model.save_weights("ckpt")
 	#df30= pd.read_csv(f"C:\\Users\\Richard\\Documents\\GitHub\\Deep-Channel\\Random datasets\\5 channels\\outfinaltest328.csv", header=None)
-	x=error
 	df30=pd.read_csv(datafile, header=None)
 	dataset = df30.values
 	dataset = dataset.astype('float64')
@@ -122,22 +154,28 @@ def runner(model=None, datafile=None):
 	maxchannels = maxeri
 	idataset = dataset[:, 2]
 	idataset = idataset.astype(int)
-
-	scaler = MinMaxScaler(feature_range=(0, 1))
-	temp = scaler.fit_transform(dataset[:,1].reshape(-1,1))
-	dataset[:,0]=temp.reshape(-1,)
+	minmax=True
+	if minmax==True:
+		scaler = MinMaxScaler(feature_range=(0, 1))
+		temp = scaler.fit_transform(dataset[:,1].reshape(-1,1))
+		dataset[:,0]=temp.reshape(-1,)
 	train_size = int(len(dataset))
 
 	in_train = dataset[:, 0]
 	target_train = idataset
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
-	loaded_model = load_model(model, custom_objects={
+	"""loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
+	loaded_model.save('TF20_saved_model', save_format='tf')
 
-	temp=scaler.inverse_transform(dataset[:,1].reshape(-1,1))
-	dataset[:,0]=temp.reshape(-1,)
-	c = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
+	loaded_model.summary()"""
+	created_model.save_weights("ckpt")
+	
+	if minmax==True:
+		temp=scaler.inverse_transform(dataset[:,0].reshape(-1,1))
+		dataset[:,0]=temp.reshape(-1,)
+	c = created_model.predict(in_train, batch_size=batch_size, verbose=0)
 	c=np.argmax(c, axis=-1)
 	c=c.reshape(-1,1)
 	"""lenny = 2000
@@ -175,23 +213,25 @@ def main():
 	for file in all:
 		if ".csv" in file:
 			matches=["half", "SKM", "biological", "fret1"]			
-			if any(substr not in file for substr in matches):
+			if not any(substr in file for substr in matches):
 				files.append(file)
 	
 	models=glob.glob('*.H5')
-	with open("failedexamples.txt","a") as foutput:
-		for file in files:
-			print(file)
-			for model in models:
-				try:
-					output=round(runner(model=model, datafile=file),5)
-					print(f"Model {model} gives Kappa = {output}")
-					foutput.write(f"\nFile {file}\n   with model {model} gives Kappa = {output}")
-					foutput.flush()
-				except:
-					output=f"\nError in {model} and {file} combination"
-					print (output)
-					foutput.write(f"\nFile {file}\n   with model {model} gives Kappa = {output}")
+	for file in files:
+		print(file)
+		outfile="failedexamples.csv"
+		for model in models:
+			output=round(runner(model=model, datafile=file),5)
+			try:
+				output=round(runner(model=model, datafile=file),5)
+				print(f"nTF version {tf.__version__} Model {model} gives Kappa = {output}")
+				with open(outfile,"a") as foutput:
+					foutput.write(f"\nnTF version {tf.__version__} File ,{file}, with model ,{model}, gives Kappa = ,{output},")				
+			except:
+				output=f"\nError in {model} and {file} combination"
+				print (output)
+				with open(outfile,"a") as foutput:
+					foutput.write(f"\nFile {file} with model {model} gives Kappa = {output}")
 		
 
 if __name__ == "__main__":
