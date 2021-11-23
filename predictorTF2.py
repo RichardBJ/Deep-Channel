@@ -125,9 +125,12 @@ def main():
 	scaler = MinMaxScaler(feature_range=(0, 1))
 	dataset = scaler.fit_transform(dataset)
 
+	scaler = MinMaxScaler(feature_range=(0, 1))
+	temp = scaler.fit_transform(dataset[:,1].reshape(-1,1))
+	dataset[:,0]=temp.reshape(-1,)
 	train_size = int(len(dataset))
 
-	in_train = dataset[:, 1]
+	in_train = dataset[:, 0]
 	target_train = idataset
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
