@@ -17,7 +17,7 @@ from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Dense, TimeDistributed
 from tensorflow.keras.layers import LSTM,Conv1D,MaxPooling1D
 from tensorflow.keras.layers import Dropout, Flatten, BatchNormalization, Activation
-from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical,plot_model
 from tensorflow.keras import optimizers
 from sklearn import preprocessing
 from sklearn.preprocessing import MinMaxScaler
@@ -135,7 +135,7 @@ def remake_model():
 	newmodel.add(Activation('softmax'))
 
 
-	newmodel.compile(loss='categorical_crossentropy', optimizer=optimizers.SGD(lr=0.001, momentum=0.9, nesterov=False), metrics=[
+	newmodel.compile(loss='sparse_categorical_crossentropy', optimizer=optimizers.SGD(lr=0.001, momentum=0.9, nesterov=False), metrics=[
 					 'accuracy'])
 	return newmodel
 
@@ -143,10 +143,14 @@ def runner(model=None, datafile=None):
 	model="deep_channel_3.h5"
 	created_model=remake_model()
 	created_model.summary()
+	
+	plot_model(created_model, to_file='model.png')
+	for layer in created_model.layers:
+		print(layer.name)
 	"""loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 	loaded_model.summary()"""
-	created_model.load_weights("ckpt")
+
 	
 	"""loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
@@ -177,7 +181,7 @@ def runner(model=None, datafile=None):
 
 	"""loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
-	loaded_model.save('TF20_saved_model', save_format='tf')"""
+	loaded_model.save('TF20_saved_model')"""
 
 	"""loaded_model.summary()
 	created_model.save_weights("ckpt")"""
@@ -185,6 +189,14 @@ def runner(model=None, datafile=None):
 	if minmax==True:
 		temp=scaler.inverse_transform(dataset[:,0].reshape(-1,1))
 		dataset[:,0]=temp.reshape(-1,)
+	created_model.fit(in_train, target_train, epochs=1, steps_per_epoch=1)
+	
+	created_model.load_weights("ckpt")
+	
+	created_model.save("T20model.h5")
+	exit()
+	print("should be saved now")
+	
 	c = created_model.predict(in_train, batch_size=batch_size, verbose=0)
 	c=np.argmax(c, axis=-1)
 	c=c.reshape(-1,1)
