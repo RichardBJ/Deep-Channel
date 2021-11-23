@@ -26,7 +26,7 @@ from sklearn.metrics import confusion_matrix, roc_auc_score, classification_repo
 import math
 
 batch_size = 256
-maxchannels=5
+maxchannels=4
 def mcor(y_true, y_pred):
     # matthews_correlation
     y_pred_pos = K.round(K.clip(y_pred, 0, 1))
@@ -140,9 +140,19 @@ def remake_model():
 	return newmodel
 
 def runner(model=None, datafile=None):
-	model="deep_chanel_5.h5"
+	model="deep_channel_3.h5"
 	created_model=remake_model()
+	created_model.summary()
+	"""loaded_model = load_model(model, custom_objects={
+							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
+	loaded_model.summary()"""
 	created_model.load_weights("ckpt")
+	
+	"""loaded_model = load_model(model, custom_objects={
+							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
+	
+	loaded_model.save_weights("ckpt")"""
+		
 	#df30= pd.read_csv(f"C:\\Users\\Richard\\Documents\\GitHub\\Deep-Channel\\Random datasets\\5 channels\\outfinaltest328.csv", header=None)
 	df30=pd.read_csv(datafile, header=None)
 	dataset = df30.values
@@ -220,8 +230,10 @@ def main():
 	for file in files:
 		print(file)
 		outfile="failedexamples.csv"
-		for model in models:
-			output=round(runner(model=model, datafile=file),5)
+		output=round(runner(model="dummy", datafile=file),5)
+		print("kappa",output)
+		"""for model in models:
+			
 			try:
 				output=round(runner(model=model, datafile=file),5)
 				print(f"nTF version {tf.__version__} Model {model} gives Kappa = {output}")
@@ -231,8 +243,7 @@ def main():
 				output=f"\nError in {model} and {file} combination"
 				print (output)
 				with open(outfile,"a") as foutput:
-					foutput.write(f"\nFile {file} with model {model} gives Kappa = {output}")
-		
+					foutput.write(f"\nFile {file} with model {model} gives Kappa = {output}")"""
 
 if __name__ == "__main__":
     c=main()
