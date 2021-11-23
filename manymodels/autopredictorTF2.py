@@ -173,11 +173,9 @@ def main():
 	files=[]
 	for file in all:
 		if ".csv" in file:
-			if all ("half", "SKM", "biological") not in file:
+			matches=["half", "SKM", "biological", "fret1"]			
+			if any(substr not in file for substr in matches):
 				files.append(file)
-	for file in files:
-		print(files)
-	exit()
 	
 	models=glob.glob('*.H5')
 	with open("failedexamples.txt","a") as foutput:
