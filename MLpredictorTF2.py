@@ -173,6 +173,7 @@ def main(dataset, mymodel, limit2):
 		c=c.reshape(-1,1)
 	print (f"dataset shape = {dataset.shape}")
 	print (f"c shape = {c.shape}")
+	print ("Tf version = ", tf.__version__)
 	output=np.concatenate((dataset[:,0:2],c),axis=1)
 	
 	return output
