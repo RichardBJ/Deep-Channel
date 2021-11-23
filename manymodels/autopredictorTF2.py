@@ -141,12 +141,12 @@ def remake_model():
 
 def runner(model=None, datafile=None):
 	model="deep_channel_3.h5"
-	created_model=remake_model()
+	"""created_model=remake_model()
 	created_model.summary()
 	
 	plot_model(created_model, to_file='model.png')
 	for layer in created_model.layers:
-		print(layer.name)
+		print(layer.name)"""
 	"""loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 	loaded_model.summary()"""
@@ -172,45 +172,43 @@ def runner(model=None, datafile=None):
 	if minmax==True:
 		scaler = MinMaxScaler(feature_range=(0, 1))
 		temp = scaler.fit_transform(dataset[:,1].reshape(-1,1))
-		dataset[:,0]=temp.reshape(-1,)
+		dataset[:,1]=temp.reshape(-1,)
 	train_size = int(len(dataset))
 
-	in_train = dataset[:, 0]
+	in_train = dataset[:, 1]
 	target_train = idataset
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
-	"""loaded_model = load_model(model, custom_objects={
+	loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
-	loaded_model.save('TF20_saved_model')"""
+	"""loaded_model.save('TF20_saved_model')"""
 
-	"""loaded_model.summary()
-	created_model.save_weights("ckpt")"""
+	loaded_model.summary()
+	"""created_model.save_weights("ckpt")"""
 	
 	if minmax==True:
-		temp=scaler.inverse_transform(dataset[:,0].reshape(-1,1))
-		dataset[:,0]=temp.reshape(-1,)
-	created_model.fit(in_train, target_train, epochs=1, steps_per_epoch=1)
+		temp=scaler.inverse_transform(dataset[:,1].reshape(-1,1))
+		dataset[:,1]=temp.reshape(-1,)
+	"""created_model.fit(in_train, target_train, epochs=1, steps_per_epoch=1)
 	
 	created_model.load_weights("ckpt")
 	
-	created_model.save("T20model.h5")
-	exit()
-	print("should be saved now")
+	created_model.save("T20model.h5")"""
 	
-	c = created_model.predict(in_train, batch_size=batch_size, verbose=0)
+	c = loaded_model.predict(in_train, batch_size=batch_size, verbose=0)
 	c=np.argmax(c, axis=-1)
 	c=c.reshape(-1,1)
 	"""lenny = 2000
 	ulenny = 5000"""
 	lenny=0
 	ulenny=5000
-	plot=False
+	plot=True
 	if plot==True:
 		loaded_model.summary()
 		plt.figure(figsize=(30, 6))
 		plt.subplot(3, 1, 1)
-		plt.plot(dataset[lenny:ulenny, 0], color='blue', label="the raw data")
-		plt.title("The raw test")
+		plt.plot(dataset[lenny:ulenny, 1], color='blue', label="the raw data")
+		plt.title("The raw "+datafile)
 		plt.ylabel('current')
 
 		plt.subplot(3, 1, 2)

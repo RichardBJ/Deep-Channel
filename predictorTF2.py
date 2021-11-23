@@ -111,7 +111,7 @@ def auc(y_true, y_pred):
     return auc
 
 def main():
-	df30= pd.read_csv(f"alldata/Random datasets/5 channels/outfinaltest534.csv", header=None)
+	df30= pd.read_csv(f"alldata/Random datasets/1 channel/outfinaltest44.csv", header=None)
 	dataset = df30.values
 	dataset = dataset.astype('float64')
 	timep = dataset[:, 0]
@@ -123,25 +123,24 @@ def main():
 	idataset = idataset.astype(int)
 
 	scaler = MinMaxScaler(feature_range=(0, 1))
-	dataset = scaler.fit_transform(dataset)
-
-	scaler = MinMaxScaler(feature_range=(0, 1))
 	temp = scaler.fit_transform(dataset[:,1].reshape(-1,1))
-	dataset[:,0]=temp.reshape(-1,)
+	dataset[:,1]=temp.reshape(-1,)
 	train_size = int(len(dataset))
 
-	in_train = dataset[:, 0]
+	in_train = dataset[:, 1]
 	target_train = idataset
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
-	loaded_model = load_model('manymodels/deep_chanel_5.h5', custom_objects={
+	loaded_model = load_model('manymodels/deep_channel_3.h5', custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 
 	loaded_model.summary()
 
-	p = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
+	p = loaded_model.predict(in_train, batch_size=batch_size, verbose=False)
+	print("p-shape",p.shape)
+	print(p[:5])
 	c=np.argmax(p, axis=-1)
-	
+	print(tf.__version__)
 	"""lenny = 2000
 	ulenny = 5000"""
 	lenny=0
