@@ -142,7 +142,7 @@ def remake_model():
 def runner(model=None, datafile=None):
 	model="deep_chanel_5.h5"
 	created_model=remake_model()
-	created_model.save_weights("ckpt")
+	created_model.load_weights("ckpt")
 	#df30= pd.read_csv(f"C:\\Users\\Richard\\Documents\\GitHub\\Deep-Channel\\Random datasets\\5 channels\\outfinaltest328.csv", header=None)
 	df30=pd.read_csv(datafile, header=None)
 	dataset = df30.values
@@ -167,10 +167,10 @@ def runner(model=None, datafile=None):
 
 	"""loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
-	loaded_model.save('TF20_saved_model', save_format='tf')
+	loaded_model.save('TF20_saved_model', save_format='tf')"""
 
-	loaded_model.summary()"""
-	created_model.save_weights("ckpt")
+	"""loaded_model.summary()
+	created_model.save_weights("ckpt")"""
 	
 	if minmax==True:
 		temp=scaler.inverse_transform(dataset[:,0].reshape(-1,1))
@@ -226,7 +226,7 @@ def main():
 				output=round(runner(model=model, datafile=file),5)
 				print(f"nTF version {tf.__version__} Model {model} gives Kappa = {output}")
 				with open(outfile,"a") as foutput:
-					foutput.write(f"\nnTF version {tf.__version__} File ,{file}, with model ,{model}, gives Kappa = ,{output},")				
+					foutput.write(f"\nTF version {tf.__version__} File ,{file}, with model ,{model}, gives Kappa = ,{output},")				
 			except:
 				output=f"\nError in {model} and {file} combination"
 				print (output)
