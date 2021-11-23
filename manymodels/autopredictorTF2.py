@@ -111,6 +111,7 @@ def auc(y_true, y_pred):
 
 def runner(model=None, datafile=None):
 	#df30= pd.read_csv(f"C:\\Users\\Richard\\Documents\\GitHub\\Deep-Channel\\Random datasets\\5 channels\\outfinaltest328.csv", header=None)
+	x=error
 	df30=pd.read_csv(datafile, header=None)
 	dataset = df30.values
 	dataset = dataset.astype('float64')
@@ -182,10 +183,15 @@ def main():
 		for file in files:
 			print(file)
 			for model in models:
-				output=round(runner(model=model, datafile=file),5)
-				print(f"Model {model} gives Kappa = {output}")
-				foutput.write(f"\nFile {file}\n   with model {model} gives Kappa = {output}")
-				foutput.flush()
+				try:
+					output=round(runner(model=model, datafile=file),5)
+					print(f"Model {model} gives Kappa = {output}")
+					foutput.write(f"\nFile {file}\n   with model {model} gives Kappa = {output}")
+					foutput.flush()
+				except:
+					output=f"\nError in {model} and {file} combination"
+					print (output)
+					foutput.write(f"\nFile {file}\n   with model {model} gives Kappa = {output}")
 		
 
 if __name__ == "__main__":
