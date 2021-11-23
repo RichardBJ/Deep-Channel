@@ -216,7 +216,7 @@ def runner(model=None, datafile=None):
 				 label="ground truth")
 		plt.ylabel('state')
 
-		plt.subplot(3, 1, 3)
+		plt.subplot(3, 1, 3) 
 		plt.plot(c[lenny:ulenny], color='red', label="confidence")
 
 		plt.xlabel('timepoint')
