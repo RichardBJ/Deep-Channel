@@ -140,7 +140,7 @@ def remake_model():
 	return newmodel
 
 def runner(model=None, datafile=None):
-	model="deep_channel_3.h5"
+	"""BEST WAS model="deep_channel_3.h5"""
 	"""created_model=remake_model()
 	created_model.summary()
 	
@@ -182,10 +182,12 @@ def runner(model=None, datafile=None):
 	loaded_model = load_model(model, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 	"""loaded_model.save('TF20_saved_model')"""
-
-	loaded_model.summary()
 	"""created_model.save_weights("ckpt")"""
-	
+	layers=[]
+	for layer in loaded_model.layers:
+		layers.append(layer.output_shape)
+	print("print output neurones=",layers[-1][1])
+	neurones=layers[-1][1]
 	if minmax==True:
 		temp=scaler.inverse_transform(dataset[:,1].reshape(-1,1))
 		dataset[:,1]=temp.reshape(-1,)
@@ -202,7 +204,7 @@ def runner(model=None, datafile=None):
 	ulenny = 5000"""
 	lenny=0
 	ulenny=5000
-	plot=True
+	plot=False
 	if plot==True:
 		loaded_model.summary()
 		plt.figure(figsize=(30, 6))
@@ -224,10 +226,10 @@ def runner(model=None, datafile=None):
 
 		plt.show()
 
-	return cohen_kappa_score(idataset,c)
+	return [cohen_kappa_score(idataset,c), neurones, maxer]
 
 def main():
-	path="c:\\users\\Richard\\Documents\\GitHub\\Deep-Channel\\alldata\\"
+	path="c:\\users\\rbj\\Documents\\GitHub\\Deep-Channel\\alldata\\"
 	all=glob.glob(path + '**\*',recursive=True)
 	files=[]
 	for file in all:
@@ -237,23 +239,24 @@ def main():
 				files.append(file)
 	
 	models=glob.glob('*.H5')
+	print (models)
+	print (files)
 	for file in files:
-		print(file)
 		outfile="failedexamples.csv"
-		output=round(runner(model="dummy", datafile=file),5)
-		print("kappa",output)
-		"""for model in models:
-			
+		for model in models:
+			print("MODEL=",model)
+			print("data=", file)		
 			try:
-				output=round(runner(model=model, datafile=file),5)
-				print(f"nTF version {tf.__version__} Model {model} gives Kappa = {output}")
+				[output, neurones,mstates]=runner(model=model, datafile=file)
+				output=round(output,5)
+				print(f"nTF version {tf.__version__} Model {model} gives Kappa = {output}\n\n")
 				with open(outfile,"a") as foutput:
-					foutput.write(f"\nTF version {tf.__version__} File ,{file}, with model ,{model}, gives Kappa = ,{output},")				
+					foutput.write(f"\nTF version {tf.__version__} File,{file}, model ,{model}, output neurones,{neurones}, Kappa = ,{output}, Max states =,{mstates}")				
 			except:
-				output=f"\nError in {model} and {file} combination"
+				output=f"\nError in {model} and {file} combination\n\n"
 				print (output)
 				with open(outfile,"a") as foutput:
-					foutput.write(f"\nFile {file} with model {model} gives Kappa = {output}")"""
+					foutput.write(f"\nFile {file} with model {model} gives Kappa = {output}")
 
 if __name__ == "__main__":
     c=main()
