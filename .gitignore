@@ -1,3 +1,15 @@
+RBJHeavyBugChasing
+dist/
+build/
+__pycache__
+*.exe
+MLmodel/my_model/variables
+MLmodel/my_model/assets
+MLmodel/my_model/
+MLmodel
+MLmodel\my_model\
+model/OtherFormats/*
+=======
 MLmodel
 dist
 build
@@ -6,3 +18,4 @@ __pycache__
 MLmodel/my_model/variables/variables.data-00000-of-00001
 MLmodel/my_model/saved_model.pb
 MLmodel/my_model/keras_metadata.pb
+

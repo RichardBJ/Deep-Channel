@@ -108,42 +108,75 @@ def auc(y_true, y_pred):
     K.get_session().run(tf.local_variables_initializer())
     return auc
 
-def main(filename, mymodel):
-	print(filename)
-	df30= pd.read_csv(filename, header=None)
-	dataset = df30.values
-	dataset = dataset.astype('float64')
+def binarize(probs):
+	print("binarizing the data to just two states")
+	maxstates=10
+	limit2=True
+	
+	states=list(np.argmax(probs,axis=1))
+	
+	freqs=[]
+	for i in range(maxstates):
+		freqs.append(states.count(i))
+	level0=np.argmax(freqs)
+	
+	freqs[level0]=0
+	level1=np.argmax(freqs)
+	
+	if level0>level1:
+		tmp=level0
+		level0=level1
+		level1=tmp
+	
+	binarized=[]
+	
+	for row in probs:
+		if np.argmax(row)<=level0:
+			binarized.append(0)                    
+		else:
+			binarized.append(1)
+	return binarized
+
+
+def main(dataset, mymodel, limit2):
+	dataset = np.asarray(dataset).astype('float64')
 	timep = dataset[:, 0]
+	"""
 	maxer = np.amax(dataset[:, 2])
 	print(maxer)
 	maxeri = maxer.astype('int')
 	maxchannels = maxeri
 	idataset = dataset[:, 2]
-	idataset = idataset.astype(int)
+	idataset = idataset.astype(int)"""
 
 	scaler = MinMaxScaler(feature_range=(0, 1))
-	dataset = scaler.fit_transform(dataset)
-
+	temp = scaler.fit_transform(dataset[:,1].reshape(-1,1))
+	dataset[:,1]=temp.reshape(-1,)
 	train_size = int(len(dataset))
 
-	in_train = dataset[:, 1]
-	target_train = idataset
+	in_train = dataset[:,1]
+	"""target_train = idataset"""
 	in_train = in_train.reshape(len(in_train), 1, 1, 1)
 
 	loaded_model = load_model(mymodel, custom_objects={
 							  'mcor': mcor, 'precision': precision, 'recall': recall, 'f1': f1, 'auc': auc})
 
-	
-
+	"""for debugging, save in a different form to see if this works better with ML"""
+	loaded_model.save('MLmodel/my_model')
+	temp=scaler.inverse_transform(dataset[:,1].reshape(-1,1))
+	dataset[:,1]=temp.reshape(-1,)
 	c = loaded_model.predict(in_train, batch_size=batch_size, verbose=True)
-	c=np.argmax(c, axis=-1)
+	if limit2==True:
+		c=np.asarray(binarize(c)).reshape(-1,1)
+	else:
+		c=np.argmax(c, axis=-1)
+		c=c.reshape(-1,1)
 	print (f"dataset shape = {dataset.shape}")
 	print (f"c shape = {c.shape}")
-	output=np.concatenate((dataset[:,0:2],c.reshape(-1,1)),axis=1)
-	lenny = 2000
-	ulenny = 5000
+	print ("Tf version = ", tf.__version__)
+	output=np.concatenate((dataset[:,0:2],c),axis=1)
 	
 	return output
 
 if __name__ == "__main__":
-	c=main(filename, mymodel)
+	c=main(data, mymodel, limit2)
