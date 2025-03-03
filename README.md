@@ -1,9 +1,12 @@
 # Deep-Channel
-Sorry we are not really updating this site regularly, due to change of staff within the group.
+Sorry we are not really updating this site anymore, due to change of staff within the group.
 This repository contains code for the paper, [Deep-Channel: A Deep Convolution and Recurrent Neural Network for Detection of Single Molecule Events] (https://www.biorxiv.org/content/10.1101/767418v3 ), by Numan Celik, Fiona O'Brien, Yalin Zheng, Frans Conens, and Richard Barrett-Jolley.
 Accepted for Publication in Nature's Communications Biology Dec 2019 (https://www.nature.com/articles/s42003-019-0729-3)
 
 This code contains the implementation of a deep learning method to automatically identify transition events of raw time-series ion channel data files. This deep learning method for the analysis of patch-clamp electrophysiological data, relies on convolutional neural networks (CNN) and long short-term memory (LSTM) architecture. This network automatically idealises complex single molecule activity more accurately and faster than traditional threshold crossing or segmental K-means (SKM). 
+
+NB: We have compiled the main multichannel model now to a JSON in keeping with the latest versions of TF. See /JSON folder.
+
 
 ## Dependencies
 * Python 3.5 and higher
