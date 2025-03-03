@@ -1,0 +1,320 @@
+
+File c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv with model deep_chanel_5.h5 gives Kappa = 
+Error in deep_chanel_5.h5 and c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv combination
+File c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv with model deep_channel_3.h5 gives Kappa = 
+Error in deep_channel_3.h5 and c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv combination
+File c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv with model nmn_oversampled_deepchanel2_5.h5 gives Kappa = 
+Error in nmn_oversampled_deepchanel2_5.h5 and c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv combination
+File c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv with model nmn_oversampled_deepchanel3_5.h5 gives Kappa = 
+Error in nmn_oversampled_deepchanel3_5.h5 and c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv combination
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,deep_chanel_5.h5, Kappa = ,0.88814, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,deep_channel_3.h5, Kappa = ,0.93182, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.88814, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.94441, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95961, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,deep_chanel_5.h5, Kappa = ,0.88814, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,deep_channel_3.h5, Kappa = ,0.93182, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.88814, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.94441, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95961, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.00033, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.04623, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.9225, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.88851, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.94793, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.94672, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.00075, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.46189, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,-0.02314, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.97924, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,T20model.h5, Kappa = ,0.931, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest10.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.88814, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,deep_chanel_5.h5, Kappa = ,0.8846, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,deep_channel_3.h5, Kappa = ,0.92816, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.8846, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.94046, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.96125, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.00076, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.04036, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.91897, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.88436, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.94786, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.94464, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.00071, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.44975, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,-0.02036, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.98067, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,T20model.h5, Kappa = ,0.92744, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\outfinaltest44.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.8846, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,deep_chanel_5.h5, Kappa = ,0.26435, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,deep_channel_3.h5, Kappa = ,0.29555, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.26435, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.30497, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.33069, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.10183, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.02667, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.30975, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.25666, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.31075, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.47845, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.00659, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.3927, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,-0.01114, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.39147, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,T20model.h5, Kappa = ,0.2954, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\1 channel\high noise\outfinaltest78.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.26435, Max states =,1.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,deep_chanel_5.h5, Kappa = ,0.95789, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,deep_channel_3.h5, Kappa = ,0.69091, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.95789, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.95663, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95569, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.26104, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.05191, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.00131, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95758, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95765, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.91668, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.53871, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00663, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.80347, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.27679, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,T20model.h5, Kappa = ,0.69068, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest328.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.95789, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,deep_chanel_5.h5, Kappa = ,0.96193, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,deep_channel_3.h5, Kappa = ,0.6889, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.96193, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.9613, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.96073, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.25333, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.04806, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.0016, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.96211, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.96159, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.9195, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.55186, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00556, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.80459, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.25703, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,T20model.h5, Kappa = ,0.6888, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest534.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.96193, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,deep_chanel_5.h5, Kappa = ,0.95896, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,deep_channel_3.h5, Kappa = ,0.7167, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.95896, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.95745, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.9565, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.2485, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.04618, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.00208, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95787, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95805, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.92011, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.53755, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00613, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.80836, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.27211, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,T20model.h5, Kappa = ,0.71673, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\outfinaltest747.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.95896, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,deep_chanel_5.h5, Kappa = ,0.96035, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,deep_channel_3.h5, Kappa = ,0.69083, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.96035, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.95922, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95834, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.25617, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.05058, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.00143, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95992, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95969, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.91856, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.54065, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00599, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.80793, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.26908, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,T20model.h5, Kappa = ,0.69071, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\train data\outshot_5_train3.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.96035, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,deep_chanel_5.h5, Kappa = ,0.95877, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,deep_channel_3.h5, Kappa = ,0.69652, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.95877, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.9576, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95673, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.25798, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.05069, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.0017, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95839, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95818, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.91678, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.53917, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00596, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.8053, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.27398, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,T20model.h5, Kappa = ,0.69641, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\validate data\outshot_5_val3.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.95877, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,deep_chanel_5.h5, Kappa = ,0.80363, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,deep_channel_3.h5, Kappa = ,0.60015, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.80363, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.80086, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.79797, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.21606, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.05158, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.00089, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.79817, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.80106, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.79994, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.44406, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00281, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.73424, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.24147, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,T20model.h5, Kappa = ,0.60012, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest985sined.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.80363, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,deep_chanel_5.h5, Kappa = ,0.79554, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,deep_channel_3.h5, Kappa = ,0.57816, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.79554, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.79337, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.78979, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.227, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.05759, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.00035, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.79138, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.79211, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.78502, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.44051, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00405, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.71828, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.26276, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,T20model.h5, Kappa = ,0.57794, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest986sined.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.79554, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,deep_chanel_5.h5, Kappa = ,0.78926, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,deep_channel_3.h5, Kappa = ,0.57469, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.78926, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.78688, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.78395, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.23286, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.05743, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,-0.00017, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.78627, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.78637, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.76535, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.44417, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00364, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.69468, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.27163, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,T20model.h5, Kappa = ,0.57448, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest987sined.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.78926, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,deep_chanel_5.h5, Kappa = ,0.80876, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,deep_channel_3.h5, Kappa = ,0.59435, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.80876, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.80599, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.80205, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.23677, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,0.058, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.00037, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.80468, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.8053, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.79355, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.45497, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,-0.00394, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.71684, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.27532, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,T20model.h5, Kappa = ,0.5942, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\Random datasets\5 channels\with drift\outfinaltest988sined.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.80876, Max states =,5.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,deep_chanel_5.h5, Kappa = ,0.95881, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,deep_channel_3.h5, Kappa = ,0.95981, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.95881, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.95543, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95248, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.20474, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.00236, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.02849, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95544, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95726, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.92448, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.20387, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.04125, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.83541, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.58915, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,T20model.h5, Kappa = ,0.95966, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest1.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.95881, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,deep_chanel_5.h5, Kappa = ,0.94136, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,deep_channel_3.h5, Kappa = ,0.94321, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.94136, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.93765, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.93396, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.19543, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.00612, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.03556, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.93778, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.94019, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.90295, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.18917, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.04491, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.80884, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.6017, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,T20model.h5, Kappa = ,0.94287, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest2.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.94136, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,deep_chanel_5.h5, Kappa = ,0.95757, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,deep_channel_3.h5, Kappa = ,0.95862, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.95757, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.95421, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95131, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.19844, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.00122, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.0278, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95449, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95629, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.92235, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.20327, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.04177, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.83453, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.5979, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,T20model.h5, Kappa = ,0.95815, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest3.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.95757, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,deep_chanel_5.h5, Kappa = ,0.95925, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,deep_channel_3.h5, Kappa = ,0.95889, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.95925, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.95496, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95195, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.19935, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.0028, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.027, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95532, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95766, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.92427, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.20136, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.04108, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.83678, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.59355, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,T20model.h5, Kappa = ,0.95856, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest4.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.95925, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,deep_chanel_5.h5, Kappa = ,0.95842, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,deep_channel_3.h5, Kappa = ,0.95966, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,nmn_oversampled_deepchanel2_5.h5, Kappa = ,0.95842, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,nmn_oversampled_deepchanel3_5.h5, Kappa = ,0.95457, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,nmn_oversampled_deepchanel4_5.h5, Kappa = ,0.95185, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,nmn_oversampled_deepchanel5_5.h5, Kappa = ,0.1973, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,nmn_oversampled_deepchanel6_5.h5, Kappa = ,-0.00101, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,nmn_oversampled_deepchanel7.h5, Kappa = ,0.02523, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,nmn_oversampled_deepchanel8.h5, Kappa = ,0.95467, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,RBJFROMSCRATCH_20190723.H5, Kappa = ,0.95721, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,RBJFROMSCRATCH_20190724.H5, Kappa = ,0.92413, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,RBJFROMSCRATCH_20190726.H5, Kappa = ,0.2028, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,RBJFROMSCRATCH_20190726n.H5, Kappa = ,0.04141, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,RBJFROMSCRATCH_20190727.H5, Kappa = ,0.83847, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,RBJFROMSCRATCH_20190919.H5, Kappa = ,0.0, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,RBJ_new_xtoversampled_deepchanel2_5.h5, Kappa = ,0.59375, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,T20model.h5, Kappa = ,0.95925, Max states =,3.0
+TF version 2.3.0 File,c:\users\rbj\Documents\GitHub\Deep-Channel\alldata\TrainingData\3 channels\outfinaltest5.csv, model ,TF20deep_chanel_5.h5, Kappa = ,0.95842, Max states =,3.0

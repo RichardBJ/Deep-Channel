@@ -1,9 +1,12 @@
 # Deep-Channel
-Sorry we are not really updating this site regularly, due to change of staff within the group.
+Sorry we are not really updating this site anymore, due to change of staff within the group.
 This repository contains code for the paper, [Deep-Channel: A Deep Convolution and Recurrent Neural Network for Detection of Single Molecule Events] (https://www.biorxiv.org/content/10.1101/767418v3 ), by Numan Celik, Fiona O'Brien, Yalin Zheng, Frans Conens, and Richard Barrett-Jolley.
 Accepted for Publication in Nature's Communications Biology Dec 2019 (https://www.nature.com/articles/s42003-019-0729-3)
 
 This code contains the implementation of a deep learning method to automatically identify transition events of raw time-series ion channel data files. This deep learning method for the analysis of patch-clamp electrophysiological data, relies on convolutional neural networks (CNN) and long short-term memory (LSTM) architecture. This network automatically idealises complex single molecule activity more accurately and faster than traditional threshold crossing or segmental K-means (SKM). 
+
+NB: We have compiled the main multichannel model now to a JSON in keeping with the latest versions of TF. See /JSON folder.
+
 
 ## Dependencies
 * Python 3.5 and higher
@@ -40,6 +43,21 @@ Small note; for simply installing all packages via pip one can use: pip install 
 A sample of synthetic ion channel data created through Signal script:
 
 ![One channel opening and closing events on synthetic ion channel data file](synthetic_data_creation/ion_channel4.png)
+
+## Matlab app
+The Matlab makes life a little easier for testing, obviously version alpha 0.001
+but has a heavy dependency list.
+Currently allows one to read a time (column 0) including file with raw data (column 1).
+csv format.
+(1) Naked Python installed in a path accessible location
+(2) Python/scripts also in the path
+(3) Pip would usually be included in the above, butdo need to
+make sure that is running before running the 
+pip install -r piprequirements.txt.  Ideally all such things
+in environments, but could not get the app to run like that.
+We created a Youtube video of the GUI in action here: https://youtu.be/7DMynRdN0cU
+**NOTE this is all development materials, made freely available as a starting point. It is not a finished product.
+
 
 ## Citation / DOI
 Please cite this work through this DOI link:
